@@ -33,3 +33,16 @@ img {
 ul {
 	list-style: none;
 }
+
+button {
+	font-family: inherit;
+	border: none;
+}
+
+.btn {
+	height: 2.5rem;
+	padding: 0 2.25rem;
+	color: $white;
+	border-radius: 100px;
+	background-image: linear-gradient(to right, $lime-green, $bright-cyan);
+}
