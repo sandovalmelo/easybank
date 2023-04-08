@@ -47,7 +47,7 @@ button {
     visibility: hidden; }
   .menu-nav {
     display: none;
-    background-color: rgba(150, 152, 166, 0.7);
+    background-image: linear-gradient(to top, #fafafa 10%, rgba(150, 152, 166, 0.7) 40%);
     position: fixed;
     top: 68px;
     left: 0;
@@ -69,7 +69,8 @@ button {
         padding: 0.75rem;
         margin: 0 auto;
         display: block;
-        align-items: center; }
+        align-items: center;
+        color: #2d314d; }
 
 .menu[data-open="true"] .open-menu {
   display: none;

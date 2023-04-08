@@ -20,7 +20,7 @@
 
 	&-nav {
 		display: none;
-		background-color: $grayish-blue-opacity;
+		background-image: linear-gradient(to top, $very-light-gray 10%, $grayish-blue-opacity 40%);
 		position: fixed;
 		top: 68px;
 		left: 0;
@@ -46,6 +46,7 @@
 				margin: 0 auto;
 				display: block;
 				align-items: center;
+				color: $dark-blue;
 			}
 		}
 	}
