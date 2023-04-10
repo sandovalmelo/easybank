@@ -1,0 +1,32 @@
+.services {
+	padding: 2rem 0;
+	text-align: center;
+	background-color: $very-light-gray;
+
+	.container {
+		padding: 0 1.5rem;
+	}
+
+	&-title,
+	&-text {
+		margin-bottom: 1rem;
+	}
+
+	&-title {
+		max-width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&-card {
+		padding: 2rem 0;
+
+		img {
+			margin: 0 auto;
+		}
+
+		&__name {
+			margin: 1rem 0;
+		}
+	}
+}
