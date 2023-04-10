@@ -1,0 +1,37 @@
+.articles {
+	padding: 2rem 0;
+	background-color: $very-light-gray;
+
+	&-title {
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+	.container {
+		padding: 0 1.5rem;
+	}
+
+	&-card {
+		margin-bottom: 1rem;
+		border-radius: 6px;
+		overflow: hidden;
+		background-color: $white;
+
+		&__author {
+			color: $grayish-blue;
+			font-size: 0.7rem;
+		}
+
+		&__title {
+			text-align: left;
+			margin: 0.5rem 0;
+		}
+
+		&__content {
+			padding: 1.5rem;
+		}
+
+		&__text {
+			font-size: 0.75rem;
+		}
+	}
+}
