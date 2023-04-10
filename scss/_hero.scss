@@ -1,0 +1,24 @@
+.hero {
+	text-align: center;
+	margin-bottom: 4rem;
+
+	&-image {
+		background-image: url("./../images/bg-intro-mobile.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+
+		img {
+			margin: 0 auto;
+		}
+	}
+
+	&-content {
+		padding: 0 1.5rem;
+	}
+
+	&-title,
+	&-text {
+		margin-bottom: 1rem;
+	}
+}
