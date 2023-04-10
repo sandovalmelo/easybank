@@ -46,3 +46,19 @@ button {
 	border-radius: 100px;
 	background-image: linear-gradient(to right, $lime-green, $bright-cyan);
 }
+
+h1,
+h2,
+h3 {
+	color: $dark-blue;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+p {
+	color: $grayish-blue;
+	font-size: 0.9rem;
+}

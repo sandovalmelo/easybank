@@ -30,6 +30,19 @@ button {
   border-radius: 100px;
   background-image: linear-gradient(to right, #31d35c, #2bb7da); }
 
+h1,
+h2,
+h3 {
+  color: #2d314d;
+  font-weight: 400; }
+
+h1 {
+  font-size: 2.5rem; }
+
+p {
+  color: #9698a6;
+  font-size: 0.9rem; }
+
 .menu {
   padding: 1.5rem;
   position: fixed;
