@@ -1,0 +1,34 @@
+.footer {
+	background-color: $dark-blue;
+	padding: 2rem 0;
+	text-align: center;
+
+	&-header {
+		margin-bottom: 2rem;
+	}
+
+	&-logo {
+		img {
+			margin: 0 auto;
+		}
+	}
+
+	&-social-media {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 1.5rem;
+	}
+
+	&-links {
+		color: $white;
+
+		li {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.btn {
+		margin-bottom: 2rem;
+	}
+}
