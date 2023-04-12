@@ -275,4 +275,35 @@ p {
   .footer .btn {
     margin-bottom: 2rem; }
 
+@media (min-width: 899px) {
+  .footer {
+    text-align: left; }
+    .footer .container {
+      padding: 1.5rem;
+      display: flex;
+      gap: 8rem; }
+    .footer-header {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .footer-logo img {
+      margin: 0; }
+    .footer-social-media {
+      margin-top: 0; }
+    .footer-links {
+      display: flex;
+      gap: 8rem; }
+      .footer-links ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+      .footer-links li {
+        margin-bottom: 0; }
+    .footer-rights {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: end; } }
+
 /*# sourceMappingURL=styles.css.map */

@@ -32,3 +32,54 @@
 		margin-bottom: 2rem;
 	}
 }
+
+@media (min-width: 899px) {
+	.footer {
+		text-align: left;
+
+		.container {
+			padding: 1.5rem;
+			display: flex;
+			gap: 8rem;
+		}
+
+		&-header {
+			margin-bottom: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&-logo {
+			img {
+				margin: 0;
+			}
+		}
+
+		&-social-media {
+			margin-top: 0;
+		}
+
+		&-links {
+			display: flex;
+			gap: 8rem;
+
+			ul {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			li {
+				margin-bottom: 0;
+			}
+		}
+
+		&-rights {
+			margin-left: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: end;
+		}
+	}
+}
