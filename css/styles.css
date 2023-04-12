@@ -240,6 +240,21 @@ p {
     .articles-card__text {
       font-size: 0.75rem; }
 
+@media (min-width: 899px) {
+  .articles {
+    padding: 4rem;
+    display: grid; }
+    .articles-title {
+      text-align: left;
+      margin-bottom: 3rem; }
+    .articles-wrarpper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem; }
+      .articles-wrarpper img {
+        height: 180px;
+        width: 100%;
+        object-fit: cover; } }
 .footer {
   background-color: #2d314d;
   padding: 2rem 0;
