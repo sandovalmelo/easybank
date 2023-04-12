@@ -44,6 +44,9 @@ h1 {
 
 h2 {
   font-size: 1.75rem; }
+  @media (min-width: 899px) {
+    h2 {
+      font-size: 2rem; } }
 
 p {
   color: #9698a6;
@@ -153,18 +156,21 @@ p {
   .hero {
     display: grid;
     grid-template-columns: 1fr minmax(20rem, 38rem) minmax(20rem, 38rem) 1fr;
-    place-items: center; }
+    place-items: center;
+    padding-bottom: 0; }
     .hero-image {
       grid-column: 3 / -1;
       grid-row: 1/ 2;
       background-image: url("./../images/bg-intro-desktop.svg");
       background-position: left 10% bottom -70%;
       background-size: auto;
-      overflow-x: hidden; }
+      overflow-x: hidden;
+      z-index: 50; }
     .hero-img {
       position: relative;
       top: -40px;
-      right: -130px; }
+      right: -130px;
+      z-index: 40; }
     .hero-content {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
@@ -192,6 +198,24 @@ p {
     .services-card__name {
       margin: 1rem 0; }
 
+@media (min-width: 899px) {
+  .services {
+    padding: 8rem 0 4rem;
+    z-index: 80;
+    position: relative;
+    text-align: left; }
+    .services-title {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%; }
+    .services-text {
+      max-width: 38rem; }
+    .services-wrarpper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem; }
+    .services-card img {
+      margin: 0; } }
 .articles {
   padding: 2rem 0;
   background-color: #fafafa; }

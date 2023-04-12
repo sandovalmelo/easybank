@@ -30,3 +30,34 @@
 		}
 	}
 }
+
+@media (min-width: 899px) {
+	.services {
+		padding: 8rem 0 4rem;
+		z-index: 80;
+		position: relative;
+		text-align: left;
+
+		&-title {
+			margin-left: 0;
+			margin-right: 0;
+			max-width: 100%;
+		}
+
+		&-text {
+			max-width: 38rem;
+		}
+
+		&-wrarpper {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 1.5rem;
+		}
+
+		&-card {
+			img {
+				margin: 0;
+			}
+		}
+	}
+}

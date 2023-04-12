@@ -29,6 +29,7 @@
 		display: grid;
 		grid-template-columns: 1fr minmax(20rem, 38rem) minmax(20rem, 38rem) 1fr;
 		place-items: center;
+		padding-bottom: 0;
 
 		&-image {
 			grid-column: 3 / -1;
@@ -37,12 +38,14 @@
 			background-position: left 10% bottom -70%;
 			background-size: auto;
 			overflow-x: hidden;
+			z-index: 50;
 		}
 
 		&-img {
 			position: relative;
 			top: -40px;
 			right: -130px;
+			z-index: 40;
 		}
 
 		&-content {
