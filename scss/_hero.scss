@@ -23,3 +23,39 @@
 		margin-bottom: 1rem;
 	}
 }
+
+@media (min-width: 899px) {
+	.hero {
+		display: grid;
+		grid-template-columns: 1fr minmax(20rem, 38rem) minmax(20rem, 38rem) 1fr;
+		place-items: center;
+
+		&-image {
+			grid-column: 3 / -1;
+			grid-row: 1/ 2;
+			background-image: url("./../images/bg-intro-desktop.svg");
+			background-position: left 10% bottom -70%;
+			background-size: auto;
+			overflow-x: hidden;
+		}
+
+		&-img {
+			position: relative;
+			top: -40px;
+			right: -130px;
+		}
+
+		&-content {
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+			text-align: left;
+			justify-self: start;
+		}
+
+		&-title,
+		&-text {
+			max-width: 25rem;
+			margin-bottom: 2rem;
+		}
+	}
+}
