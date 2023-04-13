@@ -7,6 +7,8 @@ $grayish-blue-opacity: hsla(233, 8%, 62%, 0.7);
 $light-grayish-blue: hsl(220, 16%, 96%);
 $very-light-gray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
+$gradient: linear-gradient(to right, $lime-green, $bright-cyan);
+$gradient-hover: linear-gradient(to right, lighten($lime-green, 15%), lighten($bright-cyan, 15%));
 
 *,
 *::after,
@@ -44,7 +46,14 @@ button {
 	padding: 0 2.25rem;
 	color: $white;
 	border-radius: 100px;
-	background-image: linear-gradient(to right, $lime-green, $bright-cyan);
+	background-image: $gradient;
+
+	@media (min-width: 899px) {
+		&:hover {
+			cursor: pointer;
+			background-image: $gradient-hover;
+		}
+	}
 }
 
 h1,

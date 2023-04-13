@@ -29,6 +29,10 @@ button {
   color: white;
   border-radius: 100px;
   background-image: linear-gradient(to right, #31d35c, #2bb7da); }
+  @media (min-width: 899px) {
+    .btn:hover {
+      cursor: pointer;
+      background-image: linear-gradient(to right, #70e18e, #6ccde5); } }
 
 h1,
 h2,
@@ -133,7 +137,19 @@ p {
       display: flex;
       gap: 2rem; }
     .menu-nav a {
-      color: #9698a6; }
+      color: #9698a6;
+      position: relative; }
+      .menu-nav a:hover {
+        color: #2d314d; }
+        .menu-nav a:hover:after {
+          content: "";
+          height: 4px;
+          width: 100%;
+          display: block;
+          position: absolute;
+          top: 50px;
+          left: 0;
+          background-image: linear-gradient(to right, #31d35c, #2bb7da); }
   .menu .sm-screen-btn {
     display: none;
     visibility: hidden; } }
@@ -142,6 +158,7 @@ p {
   padding-bottom: 2rem;
   background-color: #fafafa; }
   .hero-image {
+    background-image: url("./../images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top; }
@@ -254,7 +271,10 @@ p {
       .articles-wrarpper img {
         height: 180px;
         width: 100%;
-        object-fit: cover; } }
+        object-fit: cover; }
+    .articles-card__title:hover {
+      cursor: pointer;
+      color: #31d35c; } }
 .footer {
   background-color: #2d314d;
   padding: 2rem 0;
@@ -268,6 +288,8 @@ p {
     justify-content: center;
     gap: 1rem;
     margin-top: 1.5rem; }
+    .footer-social-media svg {
+      fill: white; }
   .footer-links {
     color: white; }
     .footer-links li {
@@ -291,6 +313,9 @@ p {
       margin: 0; }
     .footer-social-media {
       margin-top: 0; }
+      .footer-social-media svg:hover {
+        cursor: pointer;
+        fill: #31d35c; }
     .footer-links {
       display: flex;
       gap: 8rem; }
@@ -300,6 +325,8 @@ p {
         justify-content: space-between; }
       .footer-links li {
         margin-bottom: 0; }
+      .footer-links a:hover {
+        color: #31d35c; }
     .footer-rights {
       margin-left: auto;
       display: flex;

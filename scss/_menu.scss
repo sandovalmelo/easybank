@@ -108,6 +108,22 @@
 
 			a {
 				color: $grayish-blue;
+				position: relative;
+
+				&:hover {
+					color: $dark-blue;
+
+					&:after {
+						content: "";
+						height: 4px;
+						width: 100%;
+						display: block;
+						position: absolute;
+						top: 50px;
+						left: 0;
+						background-image: $gradient;
+					}
+				}
 			}
 		}
 

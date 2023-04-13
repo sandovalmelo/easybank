@@ -18,6 +18,10 @@
 		justify-content: center;
 		gap: 1rem;
 		margin-top: 1.5rem;
+
+		svg {
+			fill: $white;
+		}
 	}
 
 	&-links {
@@ -58,6 +62,11 @@
 
 		&-social-media {
 			margin-top: 0;
+
+			svg:hover {
+				cursor: pointer;
+				fill: $lime-green;
+			}
 		}
 
 		&-links {
@@ -72,6 +81,10 @@
 
 			li {
 				margin-bottom: 0;
+			}
+
+			a:hover {
+				color: $lime-green;
 			}
 		}
 

@@ -57,5 +57,12 @@
 				object-fit: cover;
 			}
 		}
+
+		&-card {
+			&__title:hover {
+				cursor: pointer;
+				color: $lime-green;
+			}
+		}
 	}
 }
