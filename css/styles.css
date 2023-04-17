@@ -70,7 +70,7 @@ p {
   left: 0;
   width: 100%;
   background-color: white;
-  z-index: 100; }
+  z-index: 200; }
   .menu .container {
     padding: 1.5rem; }
   .menu-header {
@@ -156,14 +156,13 @@ p {
 .hero {
   text-align: center;
   padding-bottom: 2rem;
-  background-color: #fafafa; }
-  .hero-image {
-    background-image: url("./../images/bg-intro-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top; }
-    .hero-image img {
-      margin: 0 auto; }
+  background-color: #fafafa;
+  background-image: url("./../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 60px; }
+  .hero-image img {
+    margin: 0 auto; }
   .hero-content {
     padding: 0 1.5rem; }
   .hero-title, .hero-text {
@@ -171,31 +170,38 @@ p {
 
 @media (min-width: 899px) {
   .hero {
-    display: grid;
-    grid-template-columns: 1fr minmax(20rem, 38rem) minmax(20rem, 38rem) 1fr;
-    place-items: center;
-    padding-bottom: 0; }
+    text-align: left;
+    background-image: url("./../images/bg-intro-desktop.svg");
+    background-size: cover;
+    background-position: top -130px left 480px;
+    position: relative; }
+    .hero .container {
+      height: 100vh; }
     .hero-image {
-      grid-column: 3 / -1;
-      grid-row: 1/ 2;
-      background-image: url("./../images/bg-intro-desktop.svg");
-      background-position: left 10% bottom -70%;
-      background-size: auto;
-      overflow-x: hidden;
-      z-index: 50; }
-    .hero-img {
-      position: relative;
-      top: -40px;
-      right: -130px;
-      z-index: 40; }
+      position: absolute;
+      right: 0;
+      z-index: 100;
+      overflow-x: hidden; }
+      .hero-image img {
+        position: relative;
+        top: 0;
+        left: 200px;
+        z-index: 2000;
+        width: 77%; }
     .hero-content {
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-      text-align: left;
-      justify-self: start; }
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
     .hero-title, .hero-text {
       max-width: 25rem;
       margin-bottom: 2rem; } }
+@media (min-width: 1200px) {
+  .hero {
+    background-position: top -230px left 640px; }
+    .hero-image img {
+      top: -50px;
+      left: 100px;
+      width: auto; } }
 .services {
   padding: 2rem 0;
   text-align: center;
