@@ -265,7 +265,7 @@ p {
 
 @media (min-width: 899px) {
   .articles {
-    padding: 4rem;
+    padding: 4rem 0;
     display: grid; }
     .articles-title {
       text-align: left;
